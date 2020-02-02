@@ -21,6 +21,11 @@ requiredCPUSpeedInMHz=1000     # 1 GHz
     # 3) Bash script can only do integer arithmetic. Include additional handling needed to strip the decimal part
     # 4) Execute the script before submission and confirm the output 
 
+temp="$(cat $1 | grep 'cpu MHz' | tr -d 'a-zA-Z: \t' | sort -n | tail -1)"
+
+cpuSpeedInMHz=${temp%.*}
+
+
 if test $cpuSpeedInMHz -ge $requiredCPUSpeedInMHz
    then
    echo "CPU Speed of $cpuSpeedInMHz MHz is sufficient for QBox"
