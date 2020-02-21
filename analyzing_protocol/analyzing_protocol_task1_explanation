@@ -1,0 +1,1 @@
+Ip address reported by ifconfig is local ip address of a machine, while ip address reported by ping is public ip address of a machine.

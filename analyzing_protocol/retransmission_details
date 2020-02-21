@@ -1,0 +1,2 @@
+16, 17, 18, 19
+When sender's packet is lost, receiver sends acknowledgement with same ACK number to the sender. It is called retransmission. When retransmissions is high, quality of network is low.
