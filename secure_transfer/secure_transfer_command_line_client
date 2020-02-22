@@ -1,0 +1,2 @@
+YES
+I added 'force_local_data_ssl=NO'  and 'force_local_logins_ssl=NO' in vsftpd.conf file.
